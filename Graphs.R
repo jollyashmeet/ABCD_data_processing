@@ -27,7 +27,10 @@ plot <- ggplot(database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("ABCD, Phase 1: Preprocessing")  # Add title here
@@ -77,7 +80,10 @@ plot <- ggplot(G010_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("G010, Phase 1: Preprocessing")  # Add title here
@@ -126,7 +132,10 @@ plot <- ggplot(G031_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("G031, Phase 1: Preprocessing")  # Add title here
@@ -175,7 +184,10 @@ plot <- ggplot(G032_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("G032, Phase 1: Preprocessing")  # Add title here
@@ -224,7 +236,10 @@ plot <- ggplot(G075_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("G075, Phase 1: Preprocessing")  # Add title here
@@ -273,7 +288,10 @@ plot <- ggplot(G087_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("G087, Phase 1: Preprocessing")  # Add title here
@@ -322,7 +340,10 @@ plot <- ggplot(S011_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S011, Phase 1: Preprocessing")  # Add title here
@@ -371,7 +392,10 @@ plot <- ggplot(S012_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S012, Phase 1: Preprocessing")  # Add title here
@@ -420,7 +444,10 @@ plot <- ggplot(S014_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S014, Phase 1: Preprocessing")  # Add title here
@@ -469,7 +496,10 @@ plot <- ggplot(S020_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S020, Phase 1: Preprocessing")  # Add title here
@@ -518,7 +548,10 @@ plot <- ggplot(S021_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S021, Phase 1: Preprocessing")  # Add title here
@@ -567,7 +600,10 @@ plot <- ggplot(S022_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S022, Phase 1: Preprocessing")  # Add title here
@@ -616,7 +652,10 @@ plot <- ggplot(S042_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S042, Phase 1: Preprocessing")  # Add title here
@@ -665,7 +704,10 @@ plot <- ggplot(S053_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S053, Phase 1: Preprocessing")  # Add title here
@@ -714,7 +756,10 @@ plot <- ggplot(S065_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S065, Phase 1: Preprocessing")  # Add title here
@@ -763,7 +808,10 @@ plot <- ggplot(S076_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S076, Phase 1: Preprocessing")  # Add title here
@@ -812,7 +860,10 @@ plot <- ggplot(S086_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S086, Phase 1: Preprocessing")  # Add title here
@@ -861,7 +912,10 @@ plot <- ggplot(S090_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S090, Phase 1: Preprocessing")  # Add title here
@@ -910,7 +964,10 @@ plot <- ggplot(S013_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("S013, Phase 1: Preprocessing")  # Add title here
@@ -960,7 +1017,10 @@ plot <- ggplot(P064_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("P064, Phase 1: Preprocessing")  # Add title here
@@ -1009,7 +1069,10 @@ plot <- ggplot(P043_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("P043, Phase 1: Preprocessing")  # Add title here
@@ -1058,7 +1121,10 @@ plot <- ggplot(P023_database_counts, aes(x = name, y = count, fill = value)) +
   geom_bar(stat = "identity") +
   labs(x = "Pipeline Steps", y = "Number of Subjects", fill = "Status") +
   scale_fill_manual(values = c("Success" = "green4", "ERROR" = "red", "N/A" = "gray", "ERROR(1.1)" = "blue",
-                               "ERROR(1.2)" = "deepskyblue")) +
+                               "ERROR(1.2)" = "deepskyblue", "ERROR(1.3)" = "yellow"),
+                    labels = c("Success" = "Success", "ERROR" = "ERROR", "N/A" = "Processing not executed", 
+                               "ERROR(1.1)" = "Missing T1", "ERROR(1.2)" = "Missing resting-state", 
+                               "ERROR(1.3)" = "Missing both")) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   ggtitle("P023, Phase 1: Preprocessing")  # Add title here
@@ -1171,11 +1237,12 @@ G010_subject_data <- data.frame(
   Mean_FD = fd_values
 )
 
+
 suppressWarnings(ggsave("/Users/ashmeetjolly/Desktop/ABCD_data/Status_graphs/G010_dvars.png", plot_dvars, width = 8, height = 8, dpi = 300, bg = "white"))
 suppressWarnings(ggsave("/Users/ashmeetjolly/Desktop/ABCD_data/Status_graphs/G010_fd.png", plot_fd, width = 8, height = 8, dpi = 300, bg = "white"))
 
 #save the mean dvars and fd data
-write.table(G010_subject_data, "/Users/ashmeetjolly/Desktop/ABCD_data/Status_files/G010_dvars_fd.tsv", sep = "\t", row.names = FALSE)
+write.csv(G010_subject_data, "/Users/ashmeetjolly/Desktop/ABCD_data/Status_files/G010_dvars_fd.csv", row.names = FALSE)
 
 #P064
 
@@ -1451,8 +1518,10 @@ print(G010_histogram_snr_T1)
 
 library(gridExtra)
 # Arrange plots in a grid
-grid.arrange(G010_histogram_cnr, G010_histogram_snr_T1, ncol = 2)
+G010_T1_SNR_CNR <- grid.arrange(G010_histogram_cnr, G010_histogram_snr_T1, ncol = 2)
 
+#saving the plot 
+ggsave("/Users/ashmeetjolly/Desktop/ABCD_data/Status_graphs/G010_T1_SNR_CNR.png", G010_T1_SNR_CNR , width = 8, height = 8, dpi = 300, bg = "white")
 
 
 #for functional SNR
@@ -1488,6 +1557,244 @@ G010_snr_data_rs <- data.frame(
   SNR = unlist(subject_snr)
 )
 
+# Histogram for SNR rs values
+G010_histogram_snr_rs <- ggplot(G010_snr_data_rs, aes(x = SNR)) +
+  geom_histogram(binwidth = 0.1, fill = "lightgreen", color = "black") +
+  labs(title = "G010 resting state SNR Values", x = "SNR", y = "Number of subjects") +
+  theme_minimal()
+
+print(G010_histogram_snr_rs)
+
+#saving the plot 
+ggsave("/Users/ashmeetjolly/Desktop/ABCD_data/Status_graphs/G010_rs_SNR.png", G010_histogram_snr_rs , width = 8, height = 8, dpi = 300, bg = "white")
+
+#P064
+# Load the jsonlite package
+library(jsonlite)
+
+#for T1
+# Directory containing the .json files
+directory <- "/Users/ashmeetjolly/Desktop/P064_anat_CNR_tSNR"
+
+# List all .json files in the directory
+json_files <- list.files(directory, pattern = "\\.json$", full.names = TRUE)
+
+# Initialize an empty list to store subject IDs and CNR values
+subject_cnr <- list()
+subject_snr_total <- list()
+
+# Loop through each .json file
+for (json_file in json_files) {
+  # Read the JSON file
+  json_data <- fromJSON(json_file)
+  
+  # Extract subject ID from the file name
+  subject_id <- gsub(".*sub-(\\w+)_ses.*", "\\1", basename(json_file))
+  
+  # Extract CNR value from the JSON data
+  cnr_value <- json_data$cnr
+  
+  # Extract SNR Total value from the JSON data
+  snr_total_value <- json_data$snr_total
+  
+  # Store subject ID, CNR value, and SNR Total value in the lists
+  subject_cnr[[subject_id]] <- cnr_value
+  subject_snr_total[[subject_id]] <- snr_total_value
+}
+
+# Convert the lists to data frames
+P064_cnr_data <- data.frame(
+  CNR = unlist(subject_cnr)
+)
+
+P064_snr_total_data_T1 <- data.frame(
+  SNR_Total = unlist(subject_snr_total)
+)
+
+#Plotting the T1 cnr and snr
+library(ggplot2)
+
+# Histogram for CNR values
+P064_histogram_cnr <- ggplot(P064_cnr_data, aes(x = CNR)) +
+  geom_histogram(binwidth = 0.1, fill = "lightblue", color = "black") +
+  labs(title = "P064 CNR Values", x = "CNR", y = "Number of subjects") +
+  theme_minimal()
+
+# Histogram for SNR Total values
+P064_histogram_snr_T1 <- ggplot(P064_snr_total_data_T1, aes(x = SNR_Total)) +
+  geom_histogram(binwidth = 0.1, fill = "lightgreen", color = "black") +
+  labs(title = "P064 T1 SNR_total Values", x = "SNR Total", y = "Number of subjects") +
+  theme_minimal()
+
+# Print the histograms
+print(P064_histogram_cnr)
+print(P064_histogram_snr_T1)
+
+library(gridExtra)
+# Arrange plots in a grid
+P064_T1_SNR_CNR <- grid.arrange(P064_histogram_cnr, P064_histogram_snr_T1, ncol = 2)
+
+#saving the plot 
+ggsave("/Users/ashmeetjolly/Desktop/ABCD_data/Status_graphs/P064_T1_SNR_CNR.png", P064_T1_SNR_CNR , width = 8, height = 8, dpi = 300, bg = "white")
+
+
+#for functional SNR
+# Load the jsonlite package
+library(jsonlite)
+
+# Directory containing the .json files
+directory <- "//Users/ashmeetjolly/Desktop/P064_func_SNR"
+
+# List all .json files in the directory
+json_files <- list.files(directory, pattern = "\\.json$", full.names = TRUE)
+
+# Initialize an empty list to store subject IDs and CNR values
+subject_snr <- list()
+
+# Loop through each .json file
+for (json_file in json_files) {
+  # Read the JSON file
+  json_data <- fromJSON(json_file)
+  
+  # Extract subject ID from the file name
+  subject_id <- gsub(".*sub-(\\w+)_ses.*", "\\1", basename(json_file))
+  
+  # Extract CNR value from the JSON data
+  snr_value <- json_data$snr
+  
+  # Store subject ID and CNR value in the list
+  subject_snr[[subject_id]] <- snr_value
+}
+
+# Convert the list to a data frame
+P064_snr_data_rs <- data.frame(
+  SNR = unlist(subject_snr)
+)
+
+# Histogram for SNR rs values
+P064_histogram_snr_rs <- ggplot(P064_snr_data_rs, aes(x = SNR)) +
+  geom_histogram(binwidth = 0.1, fill = "lightgreen", color = "black") +
+  labs(title = "P064 resting state SNR Values", x = "SNR", y = "Number of subjects") +
+  theme_minimal()
+
+print(P064_histogram_snr_rs)
+
+#saving the plot 
+ggsave("/Users/ashmeetjolly/Desktop/ABCD_data/Status_graphs/P064_rs_SNR.png", P064_histogram_snr_rs , width = 8, height = 8, dpi = 300, bg = "white")
+
+#S013
+# Load the jsonlite package
+library(jsonlite)
+
+#for T1
+# Directory containing the .json files
+directory <- "/Users/ashmeetjolly/Desktop/S013_anat_CNR_tSNR"
+
+# List all .json files in the directory
+json_files <- list.files(directory, pattern = "\\.json$", full.names = TRUE)
+
+# Initialize an empty list to store subject IDs and CNR values
+subject_cnr <- list()
+subject_snr_total <- list()
+
+# Loop through each .json file
+for (json_file in json_files) {
+  # Read the JSON file
+  json_data <- fromJSON(json_file)
+  
+  # Extract subject ID from the file name
+  subject_id <- gsub(".*sub-(\\w+)_ses.*", "\\1", basename(json_file))
+  
+  # Extract CNR value from the JSON data
+  cnr_value <- json_data$cnr
+  
+  # Extract SNR Total value from the JSON data
+  snr_total_value <- json_data$snr_total
+  
+  # Store subject ID, CNR value, and SNR Total value in the lists
+  subject_cnr[[subject_id]] <- cnr_value
+  subject_snr_total[[subject_id]] <- snr_total_value
+}
+
+# Convert the lists to data frames
+S013_cnr_data <- data.frame(
+  CNR = unlist(subject_cnr)
+)
+
+S013_snr_total_data_T1 <- data.frame(
+  SNR_Total = unlist(subject_snr_total)
+)
+
+#Plotting the T1 cnr and snr
+library(ggplot2)
+
+# Histogram for CNR values
+S013_histogram_cnr <- ggplot(S013_cnr_data, aes(x = CNR)) +
+  geom_histogram(binwidth = 0.1, fill = "lightblue", color = "black") +
+  labs(title = "S013 CNR Values", x = "CNR", y = "Number of subjects") +
+  theme_minimal()
+
+# Histogram for SNR Total values
+S013_histogram_snr_T1 <- ggplot(S013_snr_total_data_T1, aes(x = SNR_Total)) +
+  geom_histogram(binwidth = 0.1, fill = "lightgreen", color = "black") +
+  labs(title = "S013 T1 SNR_total Values", x = "SNR Total", y = "Number of subjects") +
+  theme_minimal()
+
+# Print the histograms
+print(S013_histogram_cnr)
+print(S013_histogram_snr_T1)
+
+library(gridExtra)
+# Arrange plots in a grid
+S013_T1_SNR_CNR <- grid.arrange(S013_histogram_cnr, S013_histogram_snr_T1, ncol = 2)
+
+#saving the plot 
+ggsave("/Users/ashmeetjolly/Desktop/ABCD_data/Status_graphs/S013_T1_SNR_CNR.png", S013_T1_SNR_CNR , width = 8, height = 8, dpi = 300, bg = "white")
+
+
+#for functional SNR
+# Load the jsonlite package
+library(jsonlite)
+
+# Directory containing the .json files
+directory <- "//Users/ashmeetjolly/Desktop/S013_func_SNR"
+
+# List all .json files in the directory
+json_files <- list.files(directory, pattern = "\\.json$", full.names = TRUE)
+
+# Initialize an empty list to store subject IDs and CNR values
+subject_snr <- list()
+
+# Loop through each .json file
+for (json_file in json_files) {
+  # Read the JSON file
+  json_data <- fromJSON(json_file)
+  
+  # Extract subject ID from the file name
+  subject_id <- gsub(".*sub-(\\w+)_ses.*", "\\1", basename(json_file))
+  
+  # Extract CNR value from the JSON data
+  snr_value <- json_data$snr
+  
+  # Store subject ID and CNR value in the list
+  subject_snr[[subject_id]] <- snr_value
+}
+
+# Convert the list to a data frame
+S013_snr_data_rs <- data.frame(
+  SNR = unlist(subject_snr)
+)
+
+# Histogram for SNR rs values
+S013_histogram_snr_rs <- ggplot(S013_snr_data_rs, aes(x = SNR)) +
+  geom_histogram(binwidth = 0.1, fill = "lightgreen", color = "black") +
+  labs(title = "S013 resting state SNR Values", x = "SNR", y = "Number of subjects") +
+  theme_minimal()
+
+print(S013_histogram_snr_rs)
+
+#saving the plot 
+ggsave("/Users/ashmeetjolly/Desktop/ABCD_data/Status_graphs/S013_rs_SNR.png", S013_histogram_snr_rs , width = 8, height = 8, dpi = 300, bg = "white")
 
 
 
